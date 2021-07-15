@@ -16,8 +16,10 @@ namespace Estructura_de_Datos
         {
             InitializeComponent();
             objPila = new clsPila();
+            objCola = new clsCola();
         }
         private clsPila objPila;
+        private clsCola objCola;
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             int dato = int.Parse(txtDato.Text);
@@ -36,12 +38,21 @@ namespace Estructura_de_Datos
             }
             else
             {
-                listBox1.Items.Remove(dato);
-                MessageBox.Show(this, (dato).ToString());
+                listBox1.Items.RemoveAt(dato);
+                //MessageBox.Show(this, (dato).ToString());
             }
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-        } 
+        }
+
+        private void btn_AgregarCola_Click(object sender, EventArgs e)
+        {
+            int dato = int.Parse(txt_Cola.Text);
+            listBox2.Items.Add(txt_Cola.Text);
+            objCola.push(dato);
+            txtDato.Clear();
+            txtDato.Focus();
+        }
     }
 }
