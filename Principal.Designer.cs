@@ -127,7 +127,7 @@ namespace Estructura_de_Datos
             this.btn_InsertarPrimero.Name = "btn_InsertarPrimero";
             this.btn_InsertarPrimero.Size = new System.Drawing.Size(125, 97);
             this.btn_InsertarPrimero.TabIndex = 7;
-            this.btn_InsertarPrimero.Text = "Insertar Primero";
+            this.btn_InsertarPrimero.Text = "Insertar Último";
             this.btn_InsertarPrimero.UseVisualStyleBackColor = true;
             this.btn_InsertarPrimero.Click += new System.EventHandler(this.btn_InsertarPrimero_Click);
             // 
@@ -137,7 +137,7 @@ namespace Estructura_de_Datos
             this.btn_InsertarUltimo.Name = "btn_InsertarUltimo";
             this.btn_InsertarUltimo.Size = new System.Drawing.Size(125, 97);
             this.btn_InsertarUltimo.TabIndex = 8;
-            this.btn_InsertarUltimo.Text = "Insertar Último";
+            this.btn_InsertarUltimo.Text = "Insertar Primero";
             this.btn_InsertarUltimo.UseVisualStyleBackColor = true;
             this.btn_InsertarUltimo.Click += new System.EventHandler(this.btn_InsertarUltimo_Click);
             // 

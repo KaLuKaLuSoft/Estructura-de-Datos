@@ -30,10 +30,10 @@ namespace Estructura_de_Datos
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_EliminarNodo = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btn_Insertar = new System.Windows.Forms.Button();
-            this.txt_Ordenado = new System.Windows.Forms.TextBox();
-            this.btn_EliminarNodo = new System.Windows.Forms.Button();
+            this.txt_Eliminar = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,13 +42,23 @@ namespace Estructura_de_Datos
             this.groupBox3.Controls.Add(this.btn_EliminarNodo);
             this.groupBox3.Controls.Add(this.listBox1);
             this.groupBox3.Controls.Add(this.btn_Insertar);
-            this.groupBox3.Controls.Add(this.txt_Ordenado);
+            this.groupBox3.Controls.Add(this.txt_Eliminar);
             this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(264, 415);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Eliminar Nodo de una Lista";
+            // 
+            // btn_EliminarNodo
+            // 
+            this.btn_EliminarNodo.Location = new System.Drawing.Point(137, 46);
+            this.btn_EliminarNodo.Name = "btn_EliminarNodo";
+            this.btn_EliminarNodo.Size = new System.Drawing.Size(93, 44);
+            this.btn_EliminarNodo.TabIndex = 3;
+            this.btn_EliminarNodo.Text = "Eliminar Nodo";
+            this.btn_EliminarNodo.UseVisualStyleBackColor = true;
+            this.btn_EliminarNodo.Click += new System.EventHandler(this.btn_EliminarNodo_Click);
             // 
             // listBox1
             // 
@@ -67,22 +77,14 @@ namespace Estructura_de_Datos
             this.btn_Insertar.TabIndex = 1;
             this.btn_Insertar.Text = "Insertar";
             this.btn_Insertar.UseVisualStyleBackColor = true;
+            this.btn_Insertar.Click += new System.EventHandler(this.btn_Insertar_Click);
             // 
-            // txt_Ordenado
+            // txt_Eliminar
             // 
-            this.txt_Ordenado.Location = new System.Drawing.Point(6, 21);
-            this.txt_Ordenado.Name = "txt_Ordenado";
-            this.txt_Ordenado.Size = new System.Drawing.Size(246, 22);
-            this.txt_Ordenado.TabIndex = 0;
-            // 
-            // btn_EliminarNodo
-            // 
-            this.btn_EliminarNodo.Location = new System.Drawing.Point(137, 46);
-            this.btn_EliminarNodo.Name = "btn_EliminarNodo";
-            this.btn_EliminarNodo.Size = new System.Drawing.Size(93, 44);
-            this.btn_EliminarNodo.TabIndex = 3;
-            this.btn_EliminarNodo.Text = "Eliminar Nodo";
-            this.btn_EliminarNodo.UseVisualStyleBackColor = true;
+            this.txt_Eliminar.Location = new System.Drawing.Point(6, 21);
+            this.txt_Eliminar.Name = "txt_Eliminar";
+            this.txt_Eliminar.Size = new System.Drawing.Size(246, 22);
+            this.txt_Eliminar.TabIndex = 0;
             // 
             // Dos
             // 
@@ -103,7 +105,7 @@ namespace Estructura_de_Datos
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btn_Insertar;
-        private System.Windows.Forms.TextBox txt_Ordenado;
+        private System.Windows.Forms.TextBox txt_Eliminar;
         private System.Windows.Forms.Button btn_EliminarNodo;
     }
 }

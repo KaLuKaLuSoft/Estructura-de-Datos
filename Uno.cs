@@ -35,7 +35,8 @@ namespace Estructura_de_Datos
 
         private void btn_Ordenar2_Click(object sender, EventArgs e)
         {
-            
+            dato = int.Parse(txt_Ordenado.Text);
+            listBox1.Items.RemoveAt(listBox1.Items.Count - dato);
         }
     }
 }

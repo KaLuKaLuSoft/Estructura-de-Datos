@@ -30,10 +30,10 @@ namespace Estructura_de_Datos
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lbl_EliNodo = new System.Windows.Forms.ListBox();
-            this.btn_Ordenar = new System.Windows.Forms.Button();
-            this.txt_EliminarNodo = new System.Windows.Forms.TextBox();
             this.btn_EliNodo = new System.Windows.Forms.Button();
+            this.lbl_EliNodo = new System.Windows.Forms.ListBox();
+            this.btn_InsertarNodo = new System.Windows.Forms.Button();
+            this.txt_EliminarNodo = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +41,7 @@ namespace Estructura_de_Datos
             // 
             this.groupBox3.Controls.Add(this.btn_EliNodo);
             this.groupBox3.Controls.Add(this.lbl_EliNodo);
-            this.groupBox3.Controls.Add(this.btn_Ordenar);
+            this.groupBox3.Controls.Add(this.btn_InsertarNodo);
             this.groupBox3.Controls.Add(this.txt_EliminarNodo);
             this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
@@ -49,6 +49,16 @@ namespace Estructura_de_Datos
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Eliminar Nodo de una Posición";
+            // 
+            // btn_EliNodo
+            // 
+            this.btn_EliNodo.Location = new System.Drawing.Point(139, 49);
+            this.btn_EliNodo.Name = "btn_EliNodo";
+            this.btn_EliNodo.Size = new System.Drawing.Size(101, 44);
+            this.btn_EliNodo.TabIndex = 3;
+            this.btn_EliNodo.Text = "Eliminar Nodo";
+            this.btn_EliNodo.UseVisualStyleBackColor = true;
+            this.btn_EliNodo.Click += new System.EventHandler(this.btn_EliNodo_Click);
             // 
             // lbl_EliNodo
             // 
@@ -59,14 +69,15 @@ namespace Estructura_de_Datos
             this.lbl_EliNodo.Size = new System.Drawing.Size(253, 308);
             this.lbl_EliNodo.TabIndex = 2;
             // 
-            // btn_Ordenar
+            // btn_InsertarNodo
             // 
-            this.btn_Ordenar.Location = new System.Drawing.Point(19, 49);
-            this.btn_Ordenar.Name = "btn_Ordenar";
-            this.btn_Ordenar.Size = new System.Drawing.Size(93, 39);
-            this.btn_Ordenar.TabIndex = 1;
-            this.btn_Ordenar.Text = "Insertar";
-            this.btn_Ordenar.UseVisualStyleBackColor = true;
+            this.btn_InsertarNodo.Location = new System.Drawing.Point(19, 49);
+            this.btn_InsertarNodo.Name = "btn_InsertarNodo";
+            this.btn_InsertarNodo.Size = new System.Drawing.Size(93, 39);
+            this.btn_InsertarNodo.TabIndex = 1;
+            this.btn_InsertarNodo.Text = "Insertar";
+            this.btn_InsertarNodo.UseVisualStyleBackColor = true;
+            this.btn_InsertarNodo.Click += new System.EventHandler(this.btn_Ordenar_Click);
             // 
             // txt_EliminarNodo
             // 
@@ -75,20 +86,11 @@ namespace Estructura_de_Datos
             this.txt_EliminarNodo.Size = new System.Drawing.Size(246, 22);
             this.txt_EliminarNodo.TabIndex = 0;
             // 
-            // btn_EliNodo
-            // 
-            this.btn_EliNodo.Location = new System.Drawing.Point(139, 49);
-            this.btn_EliNodo.Name = "btn_EliNodo";
-            this.btn_EliNodo.Size = new System.Drawing.Size(101, 44);
-            this.btn_EliNodo.TabIndex = 3;
-            this.btn_EliNodo.Text = "Eliminar Nodo";
-            this.btn_EliNodo.UseVisualStyleBackColor = true;
-            // 
             // Tres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(284, 430);
             this.Controls.Add(this.groupBox3);
             this.Name = "Tres";
             this.Text = "Tres";
@@ -102,7 +104,7 @@ namespace Estructura_de_Datos
 
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox lbl_EliNodo;
-        private System.Windows.Forms.Button btn_Ordenar;
+        private System.Windows.Forms.Button btn_InsertarNodo;
         private System.Windows.Forms.TextBox txt_EliminarNodo;
         private System.Windows.Forms.Button btn_EliNodo;
     }

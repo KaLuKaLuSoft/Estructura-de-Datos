@@ -123,8 +123,20 @@
     <Compile Include="Uno.Designer.cs">
       <DependentUpon>Uno.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cinco.resx">
+      <DependentUpon>Cinco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuatro.resx">
+      <DependentUpon>Cuatro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dos.resx">
       <DependentUpon>Dos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nueve.resx">
+      <DependentUpon>Nueve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ocho.resx">
+      <DependentUpon>Ocho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pila y Cola.resx">
       <DependentUpon>Pila y Cola.cs</DependentUpon>
@@ -141,6 +153,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Seis.resx">
+      <DependentUpon>Seis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siete.resx">
+      <DependentUpon>Siete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tres.resx">
       <DependentUpon>Tres.cs</DependentUpon>
     </EmbeddedResource>

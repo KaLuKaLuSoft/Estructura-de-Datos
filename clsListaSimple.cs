@@ -123,7 +123,7 @@ namespace Estructura_de_Datos
             }
             return n2;
         }
-        public int cantPrimos()
+        public int cantPrimos(string text)
         {
             int can = 0;
             clsNodo nA = this.objLS;
@@ -142,7 +142,7 @@ namespace Estructura_de_Datos
                     can++;
                 }
             }
-            MessageBox.Show("La cantidad de primo en la lista es " + can);
+            //MessageBox.Show("La cantidad de primo en la lista es " + can);
             return can;
         }
         public Boolean Primo(int numero)
@@ -193,7 +193,7 @@ namespace Estructura_de_Datos
                 }
                 proTotal = ((double)(proParcial + nA.getDato() / (cant + 1)));
             }
-            MessageBox.Show("El promedio es " + proTotal);
+            //MessageBox.Show("El promedio es " + proTotal);
             return proTotal;
         }
         public void InsertarUltimo(int dato)
