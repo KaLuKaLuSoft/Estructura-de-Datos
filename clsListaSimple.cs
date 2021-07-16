@@ -21,7 +21,37 @@ namespace Estructura_de_Datos
         {
             this.objLS = objLS;
         }
-        public void insertarOrdenado(int dato)
+        public void InsertarUltimo(int dato)
+        {
+            clsNodo nA = new clsNodo(dato);
+            if(objLS == null)
+            {
+                objLS = nA;
+            }
+            else
+            {
+                clsNodo copyLS = objLS;
+                while(copyLS.getRefN() != null)
+                {
+                    copyLS = copyLS.getRefN();
+                }
+                copyLS.setRefN(nA);
+            }
+        }
+        public void InsertarInicio(int dato)
+        {
+            clsNodo nA = new clsNodo(dato);
+            if(objLS == null)
+            {
+                objLS = nA;
+            }
+            else
+            {
+                nA.setRefN(objLS);
+                objLS = nA;
+            }
+        }
+        public void InsertarOrdenado(int dato)
         {
             clsNodo nA = new clsNodo(dato);
             if(objLS == null)
