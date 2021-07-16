@@ -30,56 +30,7 @@ namespace Estructura_de_Datos
         public Boolean esVacia()
         {
             return objLS == null;
-        }
-        public void InsertarUltimo(int dato)
-        {
-            clsNodo nA = new clsNodo(dato);
-            if(objLS == null)
-            {
-                objLS = nA;
-            }
-            else
-            {
-                clsNodo copyLS = objLS;
-                while(copyLS.getRefN() != null)
-                {
-                    copyLS = copyLS.getRefN();
-                }
-                copyLS.setRefN(nA);
-            }
-        }
-        public void InsertarInicio(int dato)
-        {
-            clsNodo nA = new clsNodo(dato);
-            if(objLS == null)
-            {
-                objLS = nA;
-            }
-            else
-            {
-                nA.setRefN(objLS);
-                objLS = nA;
-            }
-        }       
-        public Boolean VerificarMenorAMayor()
-        {
-            clsNodo nA = objLS;
-            Boolean verificar = false;
-            while(nA.getRefN() != null)
-            {
-                if (nA.getDato() < (nA.getRefN()).getDato()) 
-                {
-                    verificar = true;
-                }
-                else
-                {
-                    verificar = false;
-                    break;
-                }
-                nA = nA.getRefN();
-            }
-            return verificar;
-        }
+        }      
         public void InsertarOrdenadoMenorAMayor(int dato)
         {
             clsNodo nA = new clsNodo(dato);
@@ -214,7 +165,18 @@ namespace Estructura_de_Datos
             }
             return EsPrimoActual;
         }
-        //7
+        public int canNodos()
+        {
+            clsNodo nA = objLS;
+            int contador = 0;
+            while(nA.getRefN() != null)
+            {
+                contador++;
+                nA = nA.getRefN();
+            }
+            contador++;
+            return contador;
+        }
         public double Promedio()
         {
             int cant = 0;
@@ -233,6 +195,55 @@ namespace Estructura_de_Datos
             }
             MessageBox.Show("El promedio es " + proTotal);
             return proTotal;
+        }
+        public void InsertarUltimo(int dato)
+        {
+            clsNodo nA = new clsNodo(dato);
+            if (objLS == null)
+            {
+                objLS = nA;
+            }
+            else
+            {
+                clsNodo copyLS = objLS;
+                while (copyLS.getRefN() != null)
+                {
+                    copyLS = copyLS.getRefN();
+                }
+                copyLS.setRefN(nA);
+            }
+        }
+        public void InsertarInicio(int dato)
+        {
+            clsNodo nA = new clsNodo(dato);
+            if (objLS == null)
+            {
+                objLS = nA;
+            }
+            else
+            {
+                nA.setRefN(objLS);
+                objLS = nA;
+            }
+        }
+        public Boolean VerificarMenorAMayor()
+        {
+            clsNodo nA = objLS;
+            Boolean verificar = false;
+            while (nA.getRefN() != null)
+            {
+                if (nA.getDato() < (nA.getRefN()).getDato())
+                {
+                    verificar = true;
+                }
+                else
+                {
+                    verificar = false;
+                    break;
+                }
+                nA = nA.getRefN();
+            }
+            return verificar;
         }
     }
 }
