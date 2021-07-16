@@ -129,6 +129,9 @@
     <EmbeddedResource Include="Cuatro.resx">
       <DependentUpon>Cuatro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Diez.resx">
+      <DependentUpon>Diez.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dos.resx">
       <DependentUpon>Dos.cs</DependentUpon>
     </EmbeddedResource>
