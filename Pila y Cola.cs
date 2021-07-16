@@ -23,7 +23,7 @@ namespace Estructura_de_Datos
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             int dato = int.Parse(txtDato.Text);
-            listBox1.Items.Add(txtDato.Text);
+            lbl_Pila.Items.Add(txtDato.Text);
             objPila.push(dato);
             txtDato.Clear();
             txtDato.Focus();
@@ -38,21 +38,39 @@ namespace Estructura_de_Datos
             }
             else
             {
-                listBox1.Items.RemoveAt(dato);
-                //MessageBox.Show(this, (dato).ToString());
+                //dato = Convert.ToInt32(txtDato.Text);
+                lbl_Pila.Items.RemoveAt(lbl_Pila.Items.Count - 1);
+                //lbl_Pila.Items.RemoveAt(lbl_Pila.Items.IndexOf(txtDato.Text));
+                MessageBox.Show(this, (dato).ToString());
             }
         }
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-
         private void btn_AgregarCola_Click(object sender, EventArgs e)
         {
             int dato = int.Parse(txt_Cola.Text);
-            listBox2.Items.Add(txt_Cola.Text);
+            lbl_Cola.Items.Add(txt_Cola.Text);
             objCola.push(dato);
-            txtDato.Clear();
-            txtDato.Focus();
+            txt_Cola.Clear();
+            txt_Cola.Focus();
+        }
+        private void btn_EliminarCola_Click(object sender, EventArgs e)
+        {
+            int dato = objCola.pop();
+            if (dato == -1)
+            {
+                MessageBox.Show(this, "La cola está vacía...");
+            }
+            else
+            {
+                MessageBox.Show(this, (dato).ToString());
+            }
+        }
+        private void btn_Ordenar_Click(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

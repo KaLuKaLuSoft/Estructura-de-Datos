@@ -60,17 +60,14 @@ namespace Estructura_de_Datos
         {
             return nPrimero;
         }
-
         public void setnPrimero(clsNodo nPrimero)
         {
             this.nPrimero = nPrimero;
         }
-
         public clsNodo getnUltimo()
         {
             return nUltimo;
         }
-
         public void setnUltimo(clsNodo nUltimo)
         {
             this.nUltimo = nUltimo;

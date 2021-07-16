@@ -45,19 +45,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsCola.cs" />
-    <Compile Include="clsNodo.cs" />
-    <Compile Include="clsPila.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Cinco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Cinco.Designer.cs">
+      <DependentUpon>Cinco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsCola.cs" />
+    <Compile Include="clsListaSimple.cs" />
+    <Compile Include="clsNodo.cs" />
+    <Compile Include="clsPila.cs" />
+    <Compile Include="Cuatro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuatro.Designer.cs">
+      <DependentUpon>Cuatro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diez.Designer.cs">
+      <DependentUpon>Diez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dos.Designer.cs">
+      <DependentUpon>Dos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nueve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nueve.Designer.cs">
+      <DependentUpon>Nueve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ocho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ocho.Designer.cs">
+      <DependentUpon>Ocho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pila y Cola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pila y Cola.Designer.cs">
+      <DependentUpon>Pila y Cola.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Seis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seis.Designer.cs">
+      <DependentUpon>Seis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siete.Designer.cs">
+      <DependentUpon>Siete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tres.Designer.cs">
+      <DependentUpon>Tres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uno.Designer.cs">
+      <DependentUpon>Uno.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dos.resx">
+      <DependentUpon>Dos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pila y Cola.resx">
+      <DependentUpon>Pila y Cola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -68,6 +141,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tres.resx">
+      <DependentUpon>Tres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uno.resx">
+      <DependentUpon>Uno.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
